@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "rootDir": "./src",
-    "baseUrl": "./src",
-    "moduleResolution": "node",
     "target": "ES6",
-    "module": "ES6"
+    "module": "ES6",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*", "node_modules/*"]
+    },
+    "typeRoots": ["node_modules/@types"],
+    "types": ["chrome"],
+    "lib": ["es6", "dom"],
+    "allowJs": true,
+    "sourceMap": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

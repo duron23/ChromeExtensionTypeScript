@@ -36,10 +36,26 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: "src/**/*.html", to: "[path][name][ext]" },
-        { from: "src/**/*.css", to: "[path][name][ext]" },
-        { from: "src/**/*.json", to: "[path][name][ext]" },
-        { from: "src/**/*.js", to: "[path][name][ext]" },
+        {
+          from: "src/**/*.html",
+          to: "[path][name][ext]",
+          noErrorOnMissing: true,
+        },
+        {
+          from: "src/**/*.css",
+          to: "[path][name][ext]",
+          noErrorOnMissing: true,
+        },
+        {
+          from: "src/**/*.json",
+          to: "[path][name][ext]",
+          noErrorOnMissing: true,
+        },
+        {
+          from: "src/**/*.js",
+          to: "[path][name][ext]",
+          noErrorOnMissing: true,
+        },
       ],
     }),
   ],
