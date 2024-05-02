@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Organized Extension",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "action": {
+    "default_popup": "action/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/contentScript.js"]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+
+# Distribution files
+dist/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Operating System generated files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional IDE generated files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
